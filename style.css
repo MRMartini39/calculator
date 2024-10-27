@@ -22,6 +22,10 @@ body {
     flex: 1;
     border-color: green;
     font-family: "digital-font";
+    font-size: 72px;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 10px;
 }
 
 .buttons {
