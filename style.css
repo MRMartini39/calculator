@@ -1,0 +1,29 @@
+body, .calculator, .display, .buttons {
+    display: flex;
+    border-style: solid;
+    border-width: 3px;
+}
+
+body {
+    justify-content: center;
+    align-items: center;
+    border-color: blue;
+}
+
+.calculator {
+    width: 400px;
+    height: 500px;
+    justify-content: center;
+    border-color: black;
+    flex-direction: column;
+}
+
+.display {
+    flex: 1;
+    border-color: green;
+}
+
+.buttons {
+    flex: 4;
+    border-color: red;
+}
