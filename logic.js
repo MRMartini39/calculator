@@ -31,3 +31,11 @@ function operate(numOne, operator, numTwo) {
             return divide(numOne, numTwo);
     }
 }
+
+//Populate button div
+const container = document.querySelector(".buttons")
+for (let i = 0; i < 19; i++) {
+    const btn = document.createElement("button");
+    btn.classList.add("btn");
+    container.appendChild(btn);
+}
