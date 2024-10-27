@@ -40,11 +40,16 @@ for (let i = 0; i < 5; i++) {
     row.classList.add("row");
     if (i === 4) {
         btnCount = 3;
+        row.setAttribute("id", "last-row");
     }
     for (let j = 0; j < btnCount; j++) {
         const btn = document.createElement("button");
         btn.classList.add("btn");
         row.appendChild(btn);
+
+        if (j === 0 && btnCount === 3) {
+            btn.setAttribute("id", "zero");
+        }
     }
     container.appendChild(row);
 }
