@@ -32,7 +32,7 @@ function operate(numOne, operator, numTwo) {
     }
 }
 
-//Populate row divs
+//Populate row divs with buttons
 const container = document.querySelector(".buttons")
 for (let i = 0; i < 5; i++) {
     let btnCount = 4;
@@ -52,4 +52,14 @@ for (let i = 0; i < 5; i++) {
         }
     }
     container.appendChild(row);
+}
+
+//Add textContent to buttons
+
+const icons = ["AC", "+/-", "%", "/", "7", "8", "9", "*", "4", "5", "6", "-", "1", "2", "3", "+", "0", ".", "="]
+
+const buttons = Array.from(document.querySelectorAll(".btn"));
+
+for (let i = 0; i < buttons.length; i++) {
+    buttons[i].textContent = icons[i];
 }
