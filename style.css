@@ -1,47 +1,55 @@
-body, .calculator, .display, .buttons, .btn, .row{
+.calculator, .display, .buttons, .btn, .row {
     display: flex;
-    border-style: solid;
-    border-width: 3px;
+}
+
+html {
+    display: flex;
+    height: 100vh;
 }
 
 body {
+    display: flex;
     justify-content: center;
     align-items: center;
-    border-color: blue;
+    background-color: lightcyan;
+    flex: 1;
+    flex-grow: 1;
 }
 
 .calculator {
     width: 400px;
     height: 500px;
+    padding: 10px;
+    padding-bottom: 3px;
+    background-color: gray;
     justify-content: center;
-    border-color: black;
     flex-direction: column;
 }
 
 .display {
     flex: 1;
-    border-color: green;
     font-family: "digital-font";
     font-size: 72px;
     justify-content: flex-end;
     align-items: center;
     padding-right: 10px;
+    background-color: lightgray
 }
 
 .buttons {
     flex-direction: column;
     flex: 5;
-    border-color: red;
     justify-content: stretch;
+    padding: 5px;
 }
 
 .btn {
     font-size: 24px;
     font-weight: bold;
-    border-color: yellow;
     flex-basis: 25%;
     justify-content: center;
     align-items: center;
+    margin: 4px;
 }
 
 .row {
@@ -55,4 +63,16 @@ body {
 @font-face {
     font-family: "digital-font";
     src: url(digital-7/digital-7.ttf);
+}
+
+.number {
+    background-color: green;
+}
+
+.operator {
+    background-color: orange;
+}
+
+.special {
+    background-color: lightblue;
 }
